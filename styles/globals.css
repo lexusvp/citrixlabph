@@ -861,6 +861,10 @@ footer p, footer li {
   color: #212121;
 }
 
+.bold-link {
+  font-weight: bold;
+}
+
 /*------------------ SUCCESS PAYMENT PAGE ----------------*/
 .success {
   padding: 6rem 0;
