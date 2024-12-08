@@ -61,7 +61,7 @@ const Footer = () => {
       <div className='copyright'>
         <p>Copyright © 2024 JuHaOn</p>
         <p>Design by. <span>Weird Design Studio</span></p>
-        <p>Code by. <a href="https://www.facebook.com/citrixlabph/" target="_blank" rel="noopener noreferrer" style="font-weight: bold;">Citrixlab PH</a></p>
+        <p>Code by. <a href="https://www.facebook.com/citrixlabph/" target="_blank" rel="noopener noreferrer" class="bold-link">Citrixlab PH</a></p>
       </div>
     </footer>
   )
