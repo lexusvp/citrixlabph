@@ -8,7 +8,7 @@ const Footer = () => {
     <footer>
       <div className='footer'>
         <div className='logo'>
-          <Image src={logo} width={180} height={30} alt='logo' />
+          <Image src={logo} width={180} height={180} alt='logo' />
           <p>Small, artisan label that offers a thoughtfully curated collection of high quality everyday essentials made.</p>
           <div className='icon-container'>
             <div><GrTwitter size={20} /></div>
@@ -47,9 +47,9 @@ const Footer = () => {
       </div>
 
       <div className='copyright'>
-        <p>Copyright © 2024 Ju-Ha-On Online Boutique</p>
-        <p>Design by. <span>Weird Design Studio & github@shabrina12</span></p>
-        <p>Code by. <span>CitrixlabPH on github</span></p>
+        <p>Copyright © 2024 JuHaOn</p>
+        <p>Design by. <span>Weird Design Studio</span></p>
+        <p>Code by. <span>Citrixlab PH</span></p>
       </div>
     </footer>
   )
