@@ -16,12 +16,12 @@ const Navbar = ({Searchproducts}) => {
     <nav>
       <Link href='/'>
         <Image src={logo} width={202} height={140} alt='logo' />
-      </Link>
+      </Link> 
       <ul className='nav-links'>
-        <Link href='/female'><li>Female</li></Link>
-        <Link href='/male'><li>Male</li></Link>
-        <Link href='/kids'><li>Kids</li></Link>
-        <Link href='/products'><li>All Products</li></Link>
+        <Link href='/female'><li className='nav-item'>Female</li></Link>
+        <Link href='/male'><li className='nav-item'>Male</li></Link>
+        <Link href='/kids'><li className='nav-item'>Kids</li></Link>
+        <Link href='/products'><li className='nav-item'>All Products</li></Link>
       </ul>
 
         <div className='search-bar'>
