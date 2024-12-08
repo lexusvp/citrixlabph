@@ -71,7 +71,20 @@ nav li, footer li, .size li, button, .cart, .navbar-smallscreen_links {
   justify-content: center;
   gap: 0.5rem;
   color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue background */
+  transform: scale(1.1); /* Slightly enlarge the button */
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3); /* Add a shadow */
+}
+
+.btn svg {
+  margin-right: 10px; /* Space between the icon and text */
+}
+
 .subtitle {
   text-align: center;
   display: flex;
