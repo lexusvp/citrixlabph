@@ -11,9 +11,21 @@ const Footer = () => {
           <Image src={logo} width={180} height={180} alt='logo' />
           <p>Small, artisan label that offers a thoughtfully curated collection of high quality everyday essentials made.</p>
           <div className='icon-container'>
-            <div><GrTwitter size={20} /></div>
-            <div><GrFacebookOption size={20} /></div>
-            <div><GrLinkedinOption size={20} /></div>
+            <div>
+              <a href="https://x.com/SoojiDano" target="_blank" rel="noopener noreferrer">
+                <GrTwitter size={20} />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.facebook.com/citrixlabph/" target="_blank" rel="noopener noreferrer">
+                <GrFacebookOption size={20} />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/jasondano/" target="_blank" rel="noopener noreferrer">
+                <GrLinkedinOption size={20} />
+              </a>
+            </div>
           </div>
         </div>
 
@@ -49,10 +61,10 @@ const Footer = () => {
       <div className='copyright'>
         <p>Copyright © 2024 JuHaOn</p>
         <p>Design by. <span>Weird Design Studio</span></p>
-        <p>Code by. <span>Citrixlab PH</span></p>
+        <p>Code by. <span href="https://www.facebook.com/citrixlabph/" target="_blank" rel="noopener noreferrer">Citrixlab PH</span></p>
       </div>
     </footer>
   )
-}
+} 
 
 export default Footer
