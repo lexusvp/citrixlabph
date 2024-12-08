@@ -22,6 +22,44 @@ nav li, footer li, .size li, button, .cart, .navbar-smallscreen_links {
   list-style: none;
   cursor: pointer;
 }
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #fff;
+  background-color: #007bff;
+  transform: scale(1.1);
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #007bff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover::after {
+  transform: scaleX(1);
+}
+
 .btn {
   font-family: 'Sora', sans-serif;
   font-weight: 600;
@@ -33,7 +71,20 @@ nav li, footer li, .size li, button, .cart, .navbar-smallscreen_links {
   justify-content: center;
   gap: 0.5rem;
   color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue background */
+  transform: scale(1.1); /* Slightly enlarge the button */
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3); /* Add a shadow */
+}
+
+.btn svg {
+  margin-right: 10px; /* Space between the icon and text */
+}
+
 .subtitle {
   text-align: center;
   display: flex;
