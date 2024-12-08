@@ -53,7 +53,7 @@ const Navbar = ({Searchproducts}) => {
         {toggleMenu && (
           <div className='navbar-smallscreen_overlay'>
             <Link href='/'>
-              <Image className='logo-small' src={logo} width={140} height={25} alt='logo' />
+              <Image className='logo-small' src={logo} width={140} height={140} alt='logo' />
             </Link>
             <RiCloseLine  color='black' fontSize={27} className='close_icon' onClick={() => setToggleMenu(false)} />
             <ul className='navbar-smallscreen_links'>
