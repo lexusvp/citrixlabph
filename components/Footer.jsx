@@ -9,7 +9,7 @@ const Footer = () => {
       <div className='footer'>
         <div className='logo'>
           <Image src={logo} width={202} height={140} alt='logo' />
-          <p>Small, artisan label that offers a thoughtfully curated collection of high quality everyday essentials made.</p>
+          <p><small>Small, artisan label that offers a thoughtfully curated collection of high quality everyday essentials made.</small></p>
           <div className='icon-container'>
             <div>
               <a className="social-icon" href="https://x.com/SoojiDano" target="_blank" rel="noopener noreferrer">
