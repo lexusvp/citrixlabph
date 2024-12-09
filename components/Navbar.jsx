@@ -23,6 +23,22 @@ const Navbar = ({Searchproducts}) => {
       <Link href='/'>
         <Image src={logo} width={202} height={140} alt='logo' />
       </Link> 
+/*
+      <ul className='nav-links'>
+        <li className={isActive('/female') ? 'active' : ''}>
+          <Link href="/female">&nbsp;Female&nbsp;</Link>
+        </li>
+        <li className={isActive('/male') ? 'active' : ''}>
+          <Link href="/male">&nbsp;Male&nbsp;</Link>
+        </li>
+        <li className={isActive('/kids') ? 'active' : ''}>
+          <Link href="/kids">&nbsp;Kids&nbsp;</Link>
+        </li>
+        <li className={isActive('/kids') ? 'active' : ''}>
+          <Link href="/products">&nbsp;All Products&nbsp;</Link>
+        </li>
+      </ul>
+*/
       <ul className='nav-links'>
         <li className={isActive('/female') ? 'active' : ''}>
           <Link href="/female">&nbsp;Female&nbsp;</Link>
