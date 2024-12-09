@@ -12,23 +12,22 @@ const Footer = () => {
           <p>Small, artisan label that offers a thoughtfully curated collection of high quality everyday essentials made.</p>
           <div className='icon-container'>
             <div>
-              <a href="https://x.com/SoojiDano" target="_blank" rel="noopener noreferrer">
+              <a className="social-icon" href="https://x.com/SoojiDano" target="_blank" rel="noopener noreferrer">
                 <GrTwitter size={20} />
               </a>
             </div>
             <div>
-              <a href="https://www.facebook.com/citrixlabph/" target="_blank" rel="noopener noreferrer">
+              <a className="social-icon" href="https://www.facebook.com/citrixlabph/" target="_blank" rel="noopener noreferrer">
                 <GrFacebookOption size={20} />
               </a>
             </div>
             <div>
-              <a href="https://www.linkedin.com/in/jasondano/" target="_blank" rel="noopener noreferrer">
+              <a className="social-icon" href="https://www.linkedin.com/in/jasondano/" target="_blank" rel="noopener noreferrer">
                 <GrLinkedinOption size={20} />
               </a>
             </div>
           </div>
         </div>
-
         <div className='footer-links'>
           <h3>Company</h3>
           <ul>
