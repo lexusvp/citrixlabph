@@ -60,6 +60,12 @@ nav li, footer li, .size li, button, .cart, .navbar-smallscreen_links {
   transform: scaleX(1);
 }
 
+nav-links ul li.active a {
+  color: #fff;
+  background-color: #212121;
+  transform: scale(1.1);
+}
+
 .btn {
   font-family: 'Sora', sans-serif;
   font-weight: 600;
