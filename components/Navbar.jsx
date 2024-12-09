@@ -19,8 +19,6 @@ const Navbar = ({Searchproducts}) => {
 
   const isActive = (path) => router.pathname === path;
 
-  alert(router.pathname);
-
   return (
     <nav>
       <Link href='/'>
