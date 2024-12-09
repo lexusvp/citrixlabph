@@ -76,9 +76,9 @@ nav li, footer li, .size li, button, .cart, .navbar-smallscreen_links {
 }
 
 .btn:hover {
-  background-color: #12034f; /* Darker blue background */
+  background-color: #0062F5; /* Darker blue background */
   transform: scale(1.1); /* Slightly enlarge the button */
-  box-shadow: 0 4px 12px rgba(96, 105, 116, 0.3); /* Add a shadow */
+  box-shadow: 0 4px 12px rgba(90, 150, 224, 0.3); /* Add a shadow */
 }
 
 .btn svg {
