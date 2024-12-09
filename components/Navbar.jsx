@@ -25,10 +25,18 @@ const Navbar = ({Searchproducts}) => {
       </Link> 
 /*
       <ul className='nav-links'>
-        <Link href='/female'><li className='nav-item'>&nbsp;Female&nbsp;</li></Link>
-        <Link href='/male'><li className='nav-item'>&nbsp;Male&nbsp;</li></Link>
-        <Link href='/kids'><li className='nav-item'>&nbsp;Kids&nbsp;</li></Link>
-        <Link href='/products'><li className='nav-item'>&nbsp;All Products&nbsp;</li></Link>
+        <li className={isActive('/female') ? 'active' : ''}>
+          <Link href="/female">&nbsp;Female&nbsp;</Link>
+        </li>
+        <li className={isActive('/male') ? 'active' : ''}>
+          <Link href="/male">&nbsp;Male&nbsp;</Link>
+        </li>
+        <li className={isActive('/kids') ? 'active' : ''}>
+          <Link href="/kids">&nbsp;Kids&nbsp;</Link>
+        </li>
+        <li className={isActive('/kids') ? 'active' : ''}>
+          <Link href="/products">&nbsp;All Products&nbsp;</Link>
+        </li>
       </ul>
 */
       <ul className='nav-links'>
