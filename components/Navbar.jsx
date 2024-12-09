@@ -3,14 +3,21 @@ import Image from 'next/image'
 import {CiSearch} from 'react-icons/ci'
 import {CgShoppingCart} from 'react-icons/cg'
 import logo from '../src/assets/Logo.png'
-import Link from 'next/link'
+//import Link from 'next/link'
 import {RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import { useStateContext } from '../context/StateContext';
+
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const Navbar = ({Searchproducts}) => {
   const {showCart, setShowCart, totalQty} = useStateContext();
   const [toggleMenu, setToggleMenu] = useState(false);
   // const [searchTerm, setSearchTerm] = useState('')
+
+  const router = useRouter();
+
+  const isActive = (path) => router.pathname === path;
 
   return (
     <nav>
