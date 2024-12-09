@@ -16,7 +16,6 @@ const Navbar = ({Searchproducts}) => {
   // const [searchTerm, setSearchTerm] = useState('')
 
   const router = useRouter();
-
   const isActive = (path) => router.pathname === path;
 
   return (
