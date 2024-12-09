@@ -912,6 +912,16 @@ footer p, footer li {
   color: #212121;
 }
 
+.social-icon {
+  color: #333; /* Default icon color */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.social-icon:hover {
+  color: #007bff; /* Change color on hover */
+  transform: scale(1.2); /* Enlarge icon slightly */
+}
+
 /*------------------ SUCCESS PAYMENT PAGE ----------------*/
 .success {
   padding: 6rem 0;
