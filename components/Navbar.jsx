@@ -23,14 +23,6 @@ const Navbar = ({Searchproducts}) => {
       <Link href='/'>
         <Image src={logo} width={202} height={140} alt='logo' />
       </Link> 
-/*
-      <ul className='nav-links'>
-        <Link href='/female'><li className='nav-item'>&nbsp;Female&nbsp;</li></Link>
-        <Link href='/male'><li className='nav-item'>&nbsp;Male&nbsp;</li></Link>
-        <Link href='/kids'><li className='nav-item'>&nbsp;Kids&nbsp;</li></Link>
-        <Link href='/products'><li className='nav-item'>&nbsp;All Products&nbsp;</li></Link>
-      </ul>
-*/
       <ul className='nav-links'>
         <li className={isActive('/female') ? 'active' : ''}>
           <Link href="/female">&nbsp;Female&nbsp;</Link>
