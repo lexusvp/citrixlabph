@@ -4,6 +4,9 @@ import event1 from '../src/assets/event1.png'
 import event2 from '../src/assets/event2.png' 
 import event3 from '../src/assets/event3.png' 
 
+import DataGridDemo from '../pages/employee.js'; // Go up two levels if necessary
+import Records from '../pages/records.js'; // Go up two levels if necessary
+
 const EventsBanner = () => {
   return (
     <section className='event-container'>
@@ -53,7 +56,19 @@ const EventsBanner = () => {
           </div>
         </div>
       </div>
-      
+      <div className='event-banner'>
+        <div className='event-banner-left'>
+        {/* Call DataGridDemo here */}
+        <DataGridDemo />
+        </div>
+        <div className='event-banner-right'>
+        {/* Call DataGridDemo here */}
+        <DataGridDemo />
+        </div>
+      </div>
+      {/* Call DataGridDemo here 
+      <Records />
+      */}
     </section>
   )
 }
