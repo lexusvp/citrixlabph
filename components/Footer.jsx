@@ -10,8 +10,8 @@ const Footer = () => {
         <div className='logo'> 
           <Image src={logo} width={202} height={80} alt='logo' /> 
 
-          <p>Empower your business with Citrix and NetScaler solutions 
-            through expert-led training and tailored IT support.</p>
+          <p>Empower your business with CitrixLab's Framework and Cloud-based 
+            solutions through expert-led training and tailored IT support.</p>
             <p>&nbsp;</p> 
           
           <div className='icon-container'>
