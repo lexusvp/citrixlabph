@@ -13,7 +13,7 @@ const HeroBanner = () => {
             <div className="background-layer"></div>
           {/* Background Layer */}
           <div
-            className="background-layer"
+            className="background-layer2"
             style={{
               position: 'absolute', // Positioned absolutely to cover the full page
               marginTop: 0,
