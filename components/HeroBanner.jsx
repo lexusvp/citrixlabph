@@ -38,7 +38,7 @@ const HeroBanner = () => {
      
         <div className='header-left-side'>
             <div className='header-content'> 
-                <h1>CitrixLab Philippines:</h1>
+                <h1>CitrixLab Philippines</h1>
                 <p>&nbsp;Your Trusted IT Solution Provider</p> 
                 <p>&nbsp;</p> 
                 <small>
