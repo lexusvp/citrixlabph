@@ -20,7 +20,7 @@ const HeroBanner = () => {
               left: '-30px',
               width: '120%', // Full width
               height: '47vh', // Full height /workspaces/juhaon/src/assets/mainbg.jpg
-              background: `url({headerImg) top center no-repeat rgba(243,243,243,1)`,
+              background: `url({headerImg}) top center no-repeat rgba(243,243,243,1)`,
               filter: 'progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr="#4cf3f3f3", endColorstr="#4cf3f3f3")',
               backgroundSize: 'cover',
               backgroundPosition: 'left',
