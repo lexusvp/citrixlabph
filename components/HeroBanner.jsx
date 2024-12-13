@@ -1,7 +1,7 @@
 import React from 'react' 
 import {CgShoppingCart} from 'react-icons/cg' 
 import Link from 'next/link';
-import headerImg from '../src/assets/mainbg.jpg'
+import mainbg from '../src/assets/mainbg.jpg'
 
 const HeroBanner = () => {
  
