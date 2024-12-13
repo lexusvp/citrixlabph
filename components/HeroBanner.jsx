@@ -1,6 +1,7 @@
 import React from 'react' 
 import {CgShoppingCart} from 'react-icons/cg' 
 import Link from 'next/link';
+import Image from 'next/image'; // Import Image from next/image
 import mainbg from '../src/assets/mainbg.jpg'
 
 const HeroBanner = () => {
@@ -9,9 +10,10 @@ const HeroBanner = () => {
   return (
     <header className="header">
   
-            {/* Background Layer */}
+            {/* Background Layer
             <div className="background-layer"></div>
-     
+          */}
+
           {/* Background Layer */}
           <div
             className="background-layer1"
