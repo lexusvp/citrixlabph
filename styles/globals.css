@@ -17,20 +17,7 @@ body {
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
 }
-
-/* Background layer */
-.background-layer {
-  position: absolute; /* Positioned absolutely to cover the full page */
-  margin-top: 0;
-  left: -30;
-  width: 120%; /* Full width */
-  height: 47vh; /* Full height */
-  background: url('../src/assets/mainbg.jpg') top center no-repeat rgba(243,243,243,1);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#4cf3f3f3', endColorstr='#4cf3f3f3');
-  background-size: cover;
-  background-position: left; 
-  z-index: -1; /* Ensures it stays behind the body content */
-}
+ 
 
 a {
   color: inherit;
@@ -1111,6 +1098,18 @@ footer p, footer li {
   .Allproducts-container{
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  /* Background layer */
+  .background-layer1 {
+    position: absolute; /* Positioned absolutely to cover the full page */
+    margin-top: 0;
+    left: -30;
+    width: 120%; /* Full width */
+    height: 47vh; /* Full height */
+    background-size: cover;
+    background-position: left; 
+    z-index: -1; /* Ensures it stays behind the body content */
+  }
 }
 
 
@@ -1152,6 +1151,7 @@ footer p, footer li {
   .features-section .content .left div {
     width: 100%;
   } 
+  
 }
 
 
