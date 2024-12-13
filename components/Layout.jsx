@@ -1,12 +1,12 @@
 import React from 'react'
 import Head from 'next/head'
-import { Footer, Navbar } from '../components'
+import { Footer, Navbar } from '../components' 
 
 const Layout = ({children}) => {
   return (
     <div className='layout'>
         <Head>
-            <title>Dine Market</title>
+            <title>CitrixLab - Future of Innovation</title> 
         </Head>
         <header>
             <Navbar />
