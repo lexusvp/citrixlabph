@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import {CiSearch} from 'react-icons/ci'
 import {CgShoppingCart} from 'react-icons/cg'
+import { CgUser } from 'react-icons/cg'
 import logo from '../src/assets/Logo.png'
 //import Link from 'next/link'
 import {RiMenu3Line, RiCloseLine } from 'react-icons/ri';
@@ -21,19 +22,23 @@ const Navbar = ({Searchproducts}) => {
   return (
     <nav>
       <Link href='/'>
-        <Image src={logo} width={202} height={140} alt='logo' />
+        <Image src={logo} width={164} height={65}  alt='logo' />
       </Link> 
        
-        <Link href='/female'><li className='nav-item'>&nbsp;Female&nbsp;</li></Link>
-        <Link href='/male'><li className='nav-item'>&nbsp;Male&nbsp;</li></Link>
-        <Link href='/kids'><li className='nav-item'>&nbsp;Kids&nbsp;</li></Link>
-        <Link href='/products'><li className='nav-item'>&nbsp;All Products&nbsp;</li></Link> 
+        <Link href='/solutions'><li className='nav-item'>Solutions</li></Link>
+        <Link href='/platform'><li className='nav-item'>Platform</li></Link>
+        <Link href='/resources'><li className='nav-item'>Resources</li></Link>
+        <Link href='/support'><li className='nav-item'>Support</li></Link> 
+        <Link href='/partners'><li className='nav-item'>Partners</li></Link> 
+
+        <div className='space-bar'> 
+        </div>
 
         <div className='search-bar'>
           <CiSearch />
           <input 
             type='text' 
-            placeholder='What you looking for'/>
+            placeholder='Search here'/>
         </div>
         {/* onChange={(event) => {
               setSearchTerm(event.target.value);
@@ -42,16 +47,18 @@ const Navbar = ({Searchproducts}) => {
       {showCart ?
       <Link href='/cart'>
         <button className='cart' onClick={() => setShowCart(false)}>   
-          <CgShoppingCart size={22} />
+          <CgUser size={22} />
           <span className='cart-item-qty'>{totalQty}</span> 
         </button>
       </Link> 
       : 
       <button className='cart' onClick={() => setShowCart(true)}> 
-        <CgShoppingCart size={22} />
+        <CgUser size={22} />
         <span className='cart-item-qty'>{totalQty}</span>
       </button> 
       }
+
+    <Link href='/contact'><li className='nav-item'>&nbsp;Contact Us&nbsp;</li></Link> 
 
       <div className='navbar-smallscreen'>
         <RiMenu3Line color='black' fontSize={27} onClick={() => setToggleMenu(true)} />
