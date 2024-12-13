@@ -7,10 +7,13 @@ const Footer = () => {
   return (
     <footer>
       <div className='footer'>
-        <div className='logo'>
-          <Image src={logo} width={202} height={140} alt='logo' />
-          <p><small>Small, artisan label that offers a thoughtfully curated collection of high quality everyday essentials made.</small></p>
-          <p><small></small></p>
+        <div className='logo'> 
+          <Image src={logo} width={202} height={80} alt='logo' /> 
+
+          <p>Empower your business with Citrix and NetScaler solutions 
+            through expert-led training and tailored IT support.</p>
+            <p>&nbsp;</p> 
+          
           <div className='icon-container'>
             <div>
               <a className="social-icon" href="https://x.com/SoojiDano" target="_blank" rel="noopener noreferrer">
@@ -59,7 +62,7 @@ const Footer = () => {
       </div>
 
       <div className='copyright'>
-        <p>Copyright © 2024 JuHaOn</p>
+        <p>Copyright © 2024 CitrixLab Philippines</p>
         <p>Design by. <span>Weird Design Studio</span></p>
         <p>Code by. <a href="https://www.facebook.com/citrixlabph/" target="_blank" rel="noopener noreferrer" class="bold-link">Citrixlab PH</a></p>
       </div>
