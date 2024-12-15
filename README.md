@@ -1,5 +1,5 @@
 # citrixlab <img src="https://lexusvp.github.io/citrixlab/images/citrixlab-logo-sml.png" alt="Alt Text" style="width: 71px; height: 28px;">
-CitrixLab Official Landing Page Est. Sept.2023
+CitrixLab Newest Official Landing Page Est. Dec.2024
 powered by abstract⁷
 
 
