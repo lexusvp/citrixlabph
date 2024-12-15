@@ -12,7 +12,7 @@ const EventsBanner = () => {
     <section className='event-container'>
       <div className='subtitle'>
         <span>PROMOTIONS</span>
-        <h2>Our Promotions Events</h2>
+        <h2>Our Ecommerce Promotional Website</h2>
       </div>
 
       <div className='event-banner'>

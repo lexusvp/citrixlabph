@@ -48,7 +48,7 @@ export function Component() {
           <div class="block-21 mb-4 d-flex"> 
             <Image src={latestnews1} width={65} height={65}  alt='image' /> 
             <div class="text">
-                <h3 class="heading"><a href="#"><small>Even the all-powerful Pointing has no control about</small></a></h3>
+                <h3 class="heading"><a href="#"><small>IT infrastructure and drive business performance</small></a></h3>
                 <div class="meta">
                   <div><a href="#"><span class="icon-calendar"></span> Oct. 16, 2019</a></div>
                   <div><a href="#"><span class="icon-person"></span> Admin</a></div>
