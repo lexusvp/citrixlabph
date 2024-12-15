@@ -18,6 +18,24 @@ const Navbar = ({Searchproducts}) => {
 
   const router = useRouter();
   const isActive = (path) => router.pathname === path;
+ 
+  // Dropdown items for small screen menu
+  const menuItems = [
+    { href: '/female', label: 'Female' },
+    { href: '/male', label: 'Male' },
+    { href: '/kids', label: 'Kids' },
+    { href: '/products', label: 'All Products' }
+  ];
+
+  // Cart button element
+  const CartButton = (
+    <Link href='/cart'>
+      <button className='cart-small-screen' onClick={() => setShowCart(false)}>
+        <CgShoppingCart size={22} />
+        <span className='cart-item-qty'>{totalQty}</span>
+      </button>
+    </Link>
+  );
 
   return (
     <nav>
@@ -60,6 +78,7 @@ const Navbar = ({Searchproducts}) => {
 
     <Link href='/contact'><li className='nav-item'>&nbsp;Contact Us&nbsp;</li></Link> 
 
+{/*
       <div className='navbar-smallscreen'>
         <RiMenu3Line color='black' fontSize={27} onClick={() => setToggleMenu(true)} />
         {toggleMenu && (
@@ -83,6 +102,32 @@ const Navbar = ({Searchproducts}) => {
           </div>
         )}
       </div>
+
+*/}
+
+      <div className='navbar-smallscreen'>
+        <RiMenu3Line color='black' fontSize={27} onClick={() => setToggleMenu(true)} />
+        {toggleMenu && (
+          <div className='navbar-smallscreen_overlay'>
+            <Link href='/'>
+              <Image className='logo-small' src={logo} width={140} height={140} alt='logo' />
+            </Link>
+            <RiCloseLine color='black' fontSize={27} className='close_icon' onClick={() => setToggleMenu(false)} />
+            <ul className='navbar-smallscreen_links'>
+              {CartButton}
+              {menuItems.map((item, index) => (
+                <Link key={index} href={item.href}>
+                  <li>{item.label}</li>
+                </Link>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+
+
+
+
     </nav>
   )
 }
