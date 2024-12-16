@@ -1030,7 +1030,7 @@ footer p, footer li {
 @media screen and (max-width: 1000px) { 
   /* Header Background layer */
   .background-layer1 {
-    margin-top: -1rem;
+    margin-top: 1rem;
   }
   /*-------------------- EVENTS SECTION ------------------*/
   .event-banner {
