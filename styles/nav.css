@@ -200,3 +200,11 @@ nav {
     display: none; 
   }
 }
+ 
+@media screen and (max-width: 1000px) {
+  nav {
+    padding: 0rem;
+  } 
+  .nav-container-left,.nav-container-right  {
+    display: none; 
+  } 
