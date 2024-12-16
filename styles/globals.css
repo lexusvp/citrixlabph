@@ -983,7 +983,7 @@ footer p, footer li {
     margin: 4rem;
   }  
   .nav-container-right  {
-    display: false; 
+    display: none; 
   }
   .navbar-smallscreen {
     display: flex;
