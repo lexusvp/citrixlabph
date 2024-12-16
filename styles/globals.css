@@ -981,10 +981,7 @@ footer p, footer li {
  .Allproducts-container, 
   .cart-wrapper, .success {
     margin: 4rem;
-  }  
-  .nav-container-right  {
-    display: none; 
-  }
+  }   
   .navbar-smallscreen {
     display: flex;
   }
@@ -1030,13 +1027,7 @@ footer p, footer li {
 }
 
 
-@media screen and (max-width: 1000px) {
-  nav {
-    padding: 0rem;
-  } 
-  .nav-container-left,.nav-container-right  {
-    display: none; 
-  }
+@media screen and (max-width: 1000px) { 
   /* Header Background layer */
   .background-layer1 {
     margin-top: -1rem;
