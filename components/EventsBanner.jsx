@@ -56,14 +56,24 @@ const EventsBanner = () => {
           </div>
         </div>
       </div>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <hr />
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+        <div className='subtitle'>
+          <span>RECORD ADMINISTRATION SERVICE</span>
+          <h2>Our SaaS Admin User Record Page - Promotional Website</h2>
+        </div>
       <div className='event-banner'>
         <div className='event-banner-left'>
         {/* Call DataGridDemo here */}
         <DataGridDemo />
         </div>
         <div className='event-banner-right'>
-        {/* Call DataGridDemo here */}
+        {/* Call DataGridDemo here 
         <DataGridDemo />
+        */}
         </div>
       </div>
       {/* Call DataGridDemo here 

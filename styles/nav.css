@@ -1,5 +1,6 @@
 /* Base Styles for Navigation */
 nav {
+    overflow: hidden;
     background-color: white;
     margin: 2rem 7.5rem;
     display: flex;
@@ -18,6 +19,19 @@ nav {
     cursor: pointer;
   }
   
+  .nav-container-left {
+    display: flex; 
+    flex-direction: rows; 
+    gap: 1.2rem;
+  }
+  
+  .nav-container-right {
+    display: flex; 
+    flex-direction: rows;
+    align-items: right; 
+    gap: 1rem;
+  }
+
   .nav-links {
     list-style-type: none;
     padding: 0;
@@ -26,6 +40,7 @@ nav {
   }
   
   .nav-item {
+    float: left;
     font-size: 16px;
     color: #2F2205;
     text-decoration: none;
@@ -62,32 +77,6 @@ nav {
     transform: scale(1.1);
   }
   
-  /* Buttons */
-  .btn {
-    font-family: 'Sora', sans-serif;
-    font-weight: 600;
-    line-height: 18px;
-    background-color: #2F2205;
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #8B6508;
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(90, 150, 224, 0.3);
-  }
-  
-  .btn svg {
-    margin-right: 10px;
-  }
-  
   /* Subtitle Styles */
   .subtitle {
     text-align: center;
@@ -119,7 +108,7 @@ nav {
   .search-bar {
     display: flex;
     align-items: center;
-    width: 21%;
+    width: 80%;
     border: 1px solid #e4e5eb;
     border-radius: 5px;
     padding: 0 5px;
@@ -196,5 +185,13 @@ nav {
     border-radius: 5px;
     padding: 0 5px;
     transition: all 0.3s ease;
+  }
+
+  .menu-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .menu-icon:hover {
+    color: #ff6347; 
   }
   

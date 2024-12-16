@@ -44,10 +44,10 @@ a {
 .header-left-side, .header-right-side {
   display: flex;
   flex: 1;
+  margin-top: 0px;
 }
-.header-left-side {
-  display: flex;
-  padding: 3rem 8rem;
+.header-left-side { 
+  padding: 0rem 5rem;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -55,6 +55,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 1rem 4rem;
   gap: 0rem;
 }
 .header-content span {
@@ -84,16 +85,43 @@ a {
 }
 .header-content small {
   font-weight: 420;
-  font-size: 1.1rem;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 22px;
   letter-spacing: 0.03em;
   color: #212121; 
 }
 .header-content .btn {
   padding: 1rem;
   font-size: 1rem;
-  width: 35%;
+  width: 40%;
 }
+ 
+  /* Buttons */
+  .btn {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    line-height: 18px;
+    background-color: #2F2205;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #8B6508;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(90, 150, 224, 0.3);
+  }
+  
+  .btn svg {
+    margin-right: 10px;
+  }
+
 .header-featured {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -874,9 +902,50 @@ footer p, footer li {
 
 
 @media screen and (max-width: 1290px) {
-  .header, .Allproducts-container, 
+  .Allproducts-container, 
   .cart-wrapper, .success {
     margin: 4rem 6rem;
+  }
+  .header {
+    margin-top: 1px;
+    align-items: center;
+  }
+
+  .header-left-side {
+    padding: 0rem 5rem;
+    z-index: -1; /* Ensures it stays behind the body content */
+    margin-top: 0px;
+  }
+  .header-right-side {
+    display: none;
+  }
+  
+  .header-content {
+    margin-bottom: 1rem;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .header-content h1 {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 55px;
+    letter-spacing: 0.03em;
+    color: #212121; 
+  }
+  .header-content p {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #8B6508;
+    width: 70%; 
+  }
+  .header-content small { 
+    font-weight: 210;
+    font-size: 1rem;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #212121; 
   }
   .event-container, .products-outer-container, 
   .products {
@@ -889,9 +958,11 @@ footer p, footer li {
   nav {
     margin: 2rem 6rem;
   }
+
   .footer {
     padding: 2rem 6rem;
   }
+  
   .product-card{
     padding: 2rem 0;
     display: flex;
@@ -903,25 +974,27 @@ footer p, footer li {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  /* Background layer */
-  .background-layer1 {
-    position: absolute; /* Positioned absolutely to cover the full page */
-    margin-top: 0;
-    left: -30;
-    width: 120%; /* Full width */
-    height: 47vh; /* Full height */
-    background-size: cover;
-    background-position: left; 
-    z-index: -1; /* Ensures it stays behind the body content */
-  }
 }
 
 
 @media screen and (max-width: 1210px) {
-  .header, .Allproducts-container, 
+ .Allproducts-container, 
   .cart-wrapper, .success {
     margin: 4rem;
+  } 
+  .nav-container-right  {
+    display: none; 
   }
+  .navbar-smallscreen {
+    display: flex;
+  }
+  /*-------------------- HEADER SECTION ------------------*/
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
   .event-container, .products-outer-container, 
   .products, .footer {
     padding: 4rem;
@@ -960,32 +1033,15 @@ footer p, footer li {
 
 @media screen and (max-width: 1000px) {
   nav {
-    margin: 4rem;
-  }
-  .nav-links, .search-bar, .cart {
-    display: none;
+    padding: 0rem;
   } 
-  .navbar-smallscreen {
-    display: flex;
+  .nav-container-left,.nav-container-right  {
+    display: none; 
   }
-  /*-------------------- HEADER SECTION ------------------*/
-  .header {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .header-left-side {
-    padding: 2rem 0;
-    z-index: -1; /* Ensures it stays behind the body content */
-  }
-  .header-right-side {
-    display: none;
-  }
-  .header-content {
-    margin-bottom: 3rem;
-  }
-  .header-content .btn {
-    width: 50%;
+
+  /* Header Background layer */
+  .background-layer1 {
+    margin-top: -1rem;
   }
   /*-------------------- EVENTS SECTION ------------------*/
   .event-banner {
@@ -1081,12 +1137,23 @@ footer p, footer li {
 
 
 @media screen and (max-width: 650px) {
-  nav, .header, .success {
-    margin: 2rem;
-  }
+  nav {
+    padding: 0rem;
+  } 
   .Allproducts-container {
     margin: 4rem 2rem;
   }
+
+  /* Header Background layer */
+  .background-layer1 {
+    display: none;
+  }
+
+
+  .header-content h1 { 
+    line-height: 36px; 
+  }
+
   .products-outer-container,
   .event-container, .footer {
     padding: 4rem 2rem;
@@ -1101,6 +1168,7 @@ footer p, footer li {
   .newsletter {
     padding: 6rem 2rem; 
   }
+
   /*-------------------- HEADER SECTION ------------------*/
   .header-content {
     gap: 0rem;
@@ -1113,7 +1181,7 @@ footer p, footer li {
     grid-template-columns: 1fr 1fr;
   }
   .header .btn {
-    width: 60%;
+    width: 80%;
   }
   /*-------------------- EVENTS SECTION ------------------*/
   .event-banner-left .event-card:first-child {
@@ -1191,6 +1259,10 @@ footer p, footer li {
 
 
 @media screen and (max-width: 450px) {
+
+  nav {
+    padding: 0rem;
+  } 
   .event-banner-left .event-card:first-child {
     flex-direction: column;
   }
@@ -1203,8 +1275,9 @@ footer p, footer li {
     font-size: 4rem;
   }
   .header .btn {
-    width: 80%;
+    width: 100%;
   }
+
   /*-------- SINGLE PRODUCT PAGE ----------*/
   .small-image{
     width: 50px;
