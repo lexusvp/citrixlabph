@@ -982,6 +982,9 @@ footer p, footer li {
   .cart-wrapper, .success {
     margin: 4rem;
   } 
+  .nav-container-left  {
+    display: none; 
+  }
   .nav-container-right  {
     display: none; 
   }
